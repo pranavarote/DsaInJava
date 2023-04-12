@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+void createStack(stack<int>mystack){
+    stack<int> ms= mystack;
+    while(!ms.empty()){
+        cout<<"\n"<<ms.top();
+        ms.pop();
+        
+    }
+    cout<<'\n';
+}
+int main() {
+   stack <int>st;
+   st.push(20);
+   st.push(30);
+   st.push(40);
+   st.push(50);
+   st.push(60);
+   st.push(70);
+   cout<<"the stack st is ";
+   createStack(st);
+   cout<<"\n st.size()"<<st.size();
+   cout<<"\n st.top()"<<st.top();
+   cout<<"\n st.pop()";
+   st.pop();
+   createStack(st);
+   
+    return 0;
+}

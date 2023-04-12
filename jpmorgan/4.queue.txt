@@ -1,0 +1,36 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<queue>
+#include<cstdlib>
+using namespace std;
+void showsg(queue<int> sg)
+{
+    queue <int> ss=sg;
+    while(!ss.empty()){
+    cout<< '\t'<< ss.front();
+    ss.pop();
+    
+    }
+    cout<<'\n';
+    
+}
+
+int main() {
+    // Write C++ code here
+   queue <int> f;
+   f.push(10);
+   f.push(20);
+   f.push(10);
+   
+   cout<<"the queue f is:";
+   showsg(f);
+   cout<<"\n f.size "<< f.size();
+   cout<<"\n f.front "<< f.front();
+   cout<<"\n f.back "<< f.back();
+   cout<<"\n f.pop() : ";
+   f.pop();
+   showsg(f);
+   
+   
+    return 0;
+}
